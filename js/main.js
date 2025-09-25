@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".carousel-slide");
     let current = 0;
 
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         current = (current + 1) % slides.length;
         slides[current].classList.add("active");
     }, 5000);
-});
+}); */
 
 document.addEventListener("DOMContentLoaded", () => {
     new Swiper(".hotel-carousel", {

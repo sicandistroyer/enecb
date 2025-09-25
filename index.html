@@ -21,8 +21,6 @@
     <script src="https://kit.fontawesome.com/ee9903c79f.js" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
 
-
-
 </head>
 
 <body id="top">
@@ -64,40 +62,24 @@
     </nav>
 
     <div class="container">
-        <br><br>
+        <br><br><br>
         <!-- Carrusel Hero -->
         <section class="section">
             <div class="container">
-                <section class="hero is-medium is-bold" style="position: relative; overflow: hidden; height: 650px;">
-                    <div class="hero-carousel" style="height: 100%; width: 100%; position: relative;">
-                        <div class="carousel-slide"
-                            style="background-image: url('img/ENECB\ CEA\ 2025\ LOGO\ COMP.png');">
-                            <div class="hero-body has-text-centered">
-                                <p class="title is-1"></p>
-                                <p class="subtitle is-3"></p>
-                            </div>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="img/ENECB CEA 2025 LOGO COMP.png" alt="Imagen 1">
                         </div>
-                        <div class="carousel-slide" style="background-image: url('img/carrusel1.png');">
-                            <div class="hero-body has-text-centered">
-                                <p class="title is-1"></p>
-                                <p class="subtitle is-3"></p>
-                            </div>
+                        <div class="carousel-slide">
+                            <img src="img/carrusel1.HEIC" alt="Imagen 2">
                         </div>
-                        <!-- <div class="carousel-slide" style="background-image: url('img/carrusel2.jpeg');">
-                            <div class="hero-body has-text-centered">
-                                <p class="title is-1"></p>
-                                <p class="subtitle is-3"></p>
-                            </div>
-                        </div> -->
-                        <div class="carousel-slide" style="background-image: url('img/carrusel3.jpeg');">
-                            <div class="hero-body has-text-centered">
-                                <p class="title is-1"></p>
-                                <p class="subtitle is-3"></p>
-                            </div>
+                        <div class="carousel-slide">
+                            <img src="img/tec2.heic" alt="Imagen 3">
                         </div>
-
                     </div>
-                </section>
+                </div>
+
             </div>
         </section>
 
@@ -107,7 +89,8 @@
                 <li><a href="#itsjr">ITSJR</a></li>
                 <li><a href="#hoteles">Hospedaje</a></li>
                 <li><a href="#patrocinadores">Patrocinadores</a></li>
-                <li class="acceso-destacado"><a href="https://app.enecb.sjuanrio.tecnm.mx" target="_blank">Acceso Plataforma</a></li>
+                <li class="acceso-destacado"><a href="https://app.enecb.sjuanrio.tecnm.mx" target="_blank">Acceso
+                        Plataforma</a></li>
             </ul>
         </div>
 
@@ -214,16 +197,35 @@
                     distintas áreas. Hoy en día es un referente académico en la región, impulsando la innovación, la
                     investigación y el compromiso social.
                 </h3>
-                <div class="columns is-multiline carousel">
-                    <div class="column is-one-third" data-animate>
-                        <img src="/img/tec1.heic">
+                <!-- Swiper -->
+                <div class="swiper myGallery">
+                    <div class="swiper-wrapper ">
+                        <!-- Cada imagen -->
+                        <div class="swiper-slide">
+                            <img src="/img/tec1.heic">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/tec2.heic">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/tec3.heic">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/tec4.heic">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/tec5.heic">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/tec6.heic">
+                        </div>
                     </div>
-                    <div class="column is-one-third" data-animate>
-                        <img src="/img/tec2.heic">
-                    </div>
-                    <div class="column is-one-third" data-animate>
-                        <img src="/img/tec3.heic">
-                    </div>
+
+                    <!-- Botones navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Paginación -->
+                    <div class="swiper-pagination"></div>
                 </div>
                 <div class="map-container" data-animate>
                     <iframe
@@ -384,7 +386,8 @@
                 </header>
                 <section class="modal-card-body">
                     <h4 class="title is-5"><i class="fa-solid fa-address-card"></i>&nbsp; Contacto</h4>
-                    <p><i class="fa-solid fa-location-dot"></i>&nbsp; Paseo Central Num.28 k.m. 4.5, Fracc. Industrial, Valle de Oro, 76801 San Juan del Río, Qro.</p>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp; Paseo Central Num.28 k.m. 4.5, Fracc. Industrial,
+                        Valle de Oro, 76801 San Juan del Río, Qro.</p>
                     <p><i class="fa-solid fa-phone"></i>&nbsp; 800-900-3800</p>
                     <!-- <p><i class="fa-solid fa-envelope"></i>&nbsp; ventas@test.com</p> -->
                     <a target="_blank"
@@ -412,12 +415,13 @@
                 </header>
                 <section class="modal-card-body">
                     <h4 class="title is-5"><i class="fa-solid fa-address-card"></i>&nbsp; Contacto</h4>
-                    <p><i class="fa-solid fa-location-dot"></i>&nbsp; Paseo Central 23, Valle de Oro, 76803 San Juan del Río, Qro.</p>
-                    <p><i class="fa-solid fa-phone"></i>&nbsp; (427) 101 9200 &nbsp;<i class="fa-brands fa-whatsapp"></i>&nbsp;(442) 330 8016</p>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp; Paseo Central 23, Valle de Oro, 76803 San Juan del
+                        Río, Qro.</p>
+                    <p><i class="fa-solid fa-phone"></i>&nbsp; (427) 101 9200 &nbsp;<i
+                            class="fa-brands fa-whatsapp"></i>&nbsp;(442) 330 8016</p>
                     <p><i class="fa-solid fa-envelope"></i>&nbsp; recepcion.sjr@hotelesexcellence.com</p>
-                    <a target="_blank"
-                        href="https://hotelesexcellence.com"><i
-                            class="fa-solid fa-globe"></i>&nbsp; https://hotelesexcellence.com</a>
+                    <a target="_blank" href="https://hotelesexcellence.com"><i class="fa-solid fa-globe"></i>&nbsp;
+                        https://hotelesexcellence.com</a>
                     <!-- <p><i class="fa-solid fa-check"></i>&nbsp; Código de reservación: xyz</p> -->
                 </section>
                 <footer class="modal-card-foot">
@@ -496,7 +500,8 @@
             <a href="pdf/privacidad integral.pdf" target="_blank" style="color: #ffffff; text-decoration: underline;">
                 Aviso de Privacidad Integral
             </a><br>
-            <a href="pdf/privacidad simplificado.pdf" target="_blank" style="color: #ffffff; text-decoration: underline;">
+            <a href="pdf/privacidad simplificado.pdf" target="_blank"
+                style="color: #ffffff; text-decoration: underline;">
                 Aviso de Privacidad Simplificado
             </a>
         </div>
@@ -511,6 +516,21 @@
 <a href="#top" class="back-to-top">
     <i class="fa-solid fa-up-long"></i>
 </a>
+<script>
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    let index = 0;
+
+    function moveCarousel() {
+        index++;
+        if (index >= slides.length) {
+            index = 0;
+        }
+        track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    setInterval(moveCarousel, 5000); // cambia cada 3 segundos
+</script>
 <script>
     // Inicia Swiper
     const swiper = new Swiper(".myGallery", {

@@ -56,18 +56,6 @@ body {
     margin-bottom: 20px;
 }
 
-.carousel img {
-    border-radius: 10px;
-    max-height: 400px;
-    object-fit: cover;
-    transition: transform 0.4s ease-in-out;
-    width: 100%;
-}
-
-.carousel img:hover {
-    transform: scale(1.05);
-}
-
 .map-container {
     border-radius: 10px;
     overflow: hidden;
@@ -86,45 +74,6 @@ body {
     transform: translateY(0);
 }
 
-.hero-carousel {
-    /* width: 100%;
-    height: 100%;
-    position: relative; */
-    width: 100%;
-  /* aspect-ratio: 16 / 9; */ /* mantiene relación 16:9 */
-  position: relative;
-  overflow: hidden;
-
-}
-
-.carousel-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-}
-
-.carousel-slide.active {
-    opacity: 1;
-    z-index: 1;
-}
-
-.carousel-slide img.carousel-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Ajusta la imagen para llenar el contenedor sin deformar cover*/
-}
 
 
 .video-container {
@@ -209,7 +158,7 @@ footer.footer strong {
 }
 
 section {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 60px;
     /* ajusta al alto de tu navbar */
 }
 
@@ -217,9 +166,9 @@ section {
     position: fixed;
     bottom: 20px;
     /* separación desde abajo */
-    right: 20px;
+    left: 20px;
     /* separación desde la derecha */
-    background-color: #1B396A;
+    background-color: #e63946;
     /* azul corporativo */
     color: #fff;
     font-size: 24px;
@@ -235,7 +184,7 @@ section {
 }
 
 .back-to-top:hover {
-    background-color: #274b8a;
+    background-color: #e63946;
     /* un poco más claro en hover */
     transform: scale(1.1);
 }
@@ -290,3 +239,42 @@ h3 {
     font-weight: bold;
     /* negrita */
 }
+
+
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 900px; /* ancho máximo en pantallas grandes */
+      margin: auto;
+      aspect-ratio: 16 / 9; /* mantiene relación 16:9 */
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .carousel-track {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      height: 100%;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* mantiene proporción sin deformar */
+    }
