@@ -21,7 +21,7 @@ body {
 
 /* Logos en desktop */
 .navbar-item img {
-    max-height: 90px;
+    max-height: 50px;
 }
 
 /* Logos en móviles (pantallas <= 768px) */
