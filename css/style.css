@@ -240,6 +240,18 @@ h3 {
     /* negrita */
 }
 
+.custom-tabs .acceso-destacado a {
+    color: #ffffff;
+    /* texto blanco */
+    background-color: #e63946;
+    /* fondo rojo, cámbialo a tu preferencia */
+    border-radius: 3px;
+    /* esquinas redondeadas */
+    height: 1.8rem;
+    font-weight: bold;
+    /* negrita */
+}
+
 
 * {
       box-sizing: border-box;

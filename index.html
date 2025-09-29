@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <div class="tabs is-centered custom-tabs">
+        <div class="tabs is-centered custom-tabs is-hidden-mobile">
             <ul>
                 <li><a href="#sanjuan">San Juan</a></li>
                 <li><a href="#itsjr">ITSJR</a></li>
@@ -96,6 +96,29 @@
                         Plataforma</a></li>
             </ul>
         </div>
+
+        <!-- Menú Burger solo en móvil -->
+        <nav class="navbar is-hidden-tablet is-link " role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://app.enecbcea.sjuanrio.tecnm.mx" target="_blank"> <i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;Acceso plataforma</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="mobileMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="mobileMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#sanjuan">San Juan</a>
+                    <a class="navbar-item" href="#itsjr">ITSJR</a>
+                    <a class="navbar-item" href="#hoteles">Hospedaje</a>
+                    <a class="navbar-item" href="#patrocinadores">Patrocinadores</a><!-- 
+                    <a class="navbar-item is-selected" href="https://app.enecbcea.sjuanrio.tecnm.mx"
+                        target="_blank">Acceso Plataforma</a> -->
+                </div>
+            </div>
+        </nav>
 
         <!-- Sección Video -->
         <section class="section">
@@ -118,8 +141,8 @@
         <!-- Sección Fotos Municipio -->
         <section class="section" id="sanjuan">
             <div class="container">
-                <h2 class="title is-3 section-title">San Juan del Río</h2>
-                <h3 class="subtitle has-text-centered">
+                <h2 class="title is-3 section-title" data-animate>San Juan del Río</h2>
+                <h3 class="subtitle has-text-centered" data-animate>
                     Fundado en 1531, es uno de los municipios más antiguos de Querétaro. Destaca por su riqueza cultural
                     y arquitectónica, con templos históricos, antiguas casonas y tradiciones que perduran en el tiempo.
                     Su centro conserva la esencia colonial y es un punto de encuentro para la vida cultural y turística
@@ -127,7 +150,7 @@
                 </h3>
 
                 <!-- Swiper -->
-                <div class="swiper myGallery">
+                <div class="swiper myGallery" data-animate>
                     <div class="swiper-wrapper ">
                         <!-- Cada imagen -->
                         <div class="swiper-slide">
@@ -185,7 +208,6 @@
             <button class="modal-close is-large" aria-label="close"></button>
         </div>
 
-
         <!-- Sección Fotos Institución-->
         <section class="section" id="itsjr">
             <div class="container">
@@ -201,7 +223,7 @@
                     investigación y el compromiso social.
                 </h3>
                 <!-- Swiper -->
-                <div class="swiper myGallery">
+                <div class="swiper myGallery" data-animate>
                     <div class="swiper-wrapper ">
                         <!-- Cada imagen -->
                         <div class="swiper-slide">
@@ -238,7 +260,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Sección Hoteles-->
         <section class="section" id="hoteles">
